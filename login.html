@@ -77,17 +77,22 @@
 						  <fieldset class="input">
 						    <p id="login-form-username">
 						      <label for="modlgn_username" requeried>Correo</label>
-						      <input id="modlgn_username" type="text" name="email" class="inputbox" size="18" autocomplete="off">
+						      <input id="modlgn_username" type="text" name="email" class="inputbox" size="18" autocomplete="off" requeried>
 						    </p>
 						    <p id="login-form-password">
-						      <label for="modlgn_passwd" requeried>Contraseña</label>
-						      <input id="modlgn_passwd" type="password" name="password" class="inputbox" size="18" autocomplete="off">
+						      <label for="modlgn_passwd">Contraseña</label>
+						      <input id="modlgn_passwd" type="password" name="password" class="inputbox" size="18" autocomplete="off" requeried>
 						    </p>
 						    <div class="remember">
 							    <p id="login-form-remember">
 							      <label for="modlgn_remember"><a href="#">¿Olvidaste la contraeña? </a></label>
 							   </p>
-								<a href="trainers.html"><button type="button" class="success" aria-label="submit">Entrar</button></a>
+								<!-- <a href="trainers.html"><button type="button" class="success" aria-label="submit" ><input type="button" required> Entrar</button></a> -->
+								<label for="submit"></label>
+								<a href="trainers.html" <mat-form-field>
+									<input matInput placeholder="label" value="Entrar" required>
+								</mat-form-field>
+								<!-- <input type="submit" value="Entrar"></a> -->
 							 </div>
 						  </fieldset>
 						 </form>
